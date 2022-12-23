@@ -8433,5 +8433,20 @@
       "reviewCount": 108,
       "rating": 5
     }
+  ],
+  "users": [
+    {
+      "name": "masai admin",
+      "email": "masai@admin.com",
+      "password": "Masai@123",
+      "id": 1
+    },
+    {
+      "name": "kalu",
+      "email": "kalu@email.com",
+      "password": "Kalu@1234",
+      "role": "user",
+      "id": 2
+    }
   ]
 }
