@@ -8439,6 +8439,7 @@
       "name": "masai admin",
       "email": "masai@admin.com",
       "password": "Masai@123",
+      "role":"admin",
       "id": 1
     },
     {
