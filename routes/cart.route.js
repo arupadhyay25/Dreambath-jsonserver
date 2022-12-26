@@ -110,7 +110,17 @@ cartRouter.delete("/cart/", Auth, async (req, res) => {
     res.status(400).send();
   }
 });
-
+cartRouter.delete('/cart/clear',Auth,async(req,res)=>{
+  const user = req.body.userId;
+  try{
+    await CartModel.findOneAndDelete({user}); 
+    res.send({"message":"cart is empty."})
+    
+  }catch(error){
+    console.log(error);
+    res.status(400).send();
+  }
+});
 
 
 module.exports = cartRouter;
